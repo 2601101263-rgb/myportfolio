@@ -1,0 +1,367 @@
+:root {
+    --berry: #5B0F33;
+    --blush: #FBCFE8;
+    --hot: #DB2777;
+    --cotton: #FFF5F9;
+    --plum: #4A2338;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--plum);
+    background-color: var(--cotton);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    color: var(--berry);
+}
+
+h2 {
+    font-size: 28px;
+    margin: 0 0 12px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 8px 0 6px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 32px;
+    background-color: var(--berry);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--hot);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--blush);
+    text-decoration: underline;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 24px 16px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+header p {
+    margin: 4px 0;
+}
+
+header .btn {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--hot);
+    border: 2px solid var(--berry);
+    border-radius: 999px;
+    box-shadow: 4px 4px 0 var(--berry);
+}
+
+.btn:hover,
+.btn:focus-visible {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--berry);
+}
+
+.pill {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--berry);
+    background-color: var(--blush);
+    border: 2px solid var(--berry);
+    border-radius: 999px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.card {
+    margin-bottom: 32px;
+    padding: 28px;
+    background-color: var(--blush);
+    border: 2px solid var(--berry);
+    border-radius: 16px;
+    box-shadow: 6px 6px 0 var(--berry);
+}
+
+.card.plain {
+    background-color: white;
+}
+
+.card ul {
+    margin: 6px 0;
+    padding-left: 24px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.about-grid p {
+    margin: 0 0 10px;
+}
+
+.portfolio-photo {
+    flex-shrink: 0;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--berry);
+    border-radius: 16px;
+    box-shadow: 5px 5px 0 var(--hot);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.project {
+    margin-bottom: 0;
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    border: 2px solid var(--berry);
+    border-radius: 12px;
+}
+
+
+footer {
+    padding: 24px;
+    text-align: center;
+    color: white;
+    background-color: var(--berry);
+}
+
+footer p {
+    margin: 0;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--hot);
+    outline-offset: 3px;
+}
+
+
+.contact-list {
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 16px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0;
+    padding: 12px 16px;
+    background-color: white;
+    border: 2px solid var(--berry);
+    border-radius: 14px;
+    box-shadow: 4px 4px 0 var(--berry);
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color: var(--hot);
+    border: 2px solid var(--berry);
+    border-radius: 50%;
+}
+
+.contact-list a {
+    font-weight: 600;
+    color: var(--berry);
+    overflow-wrap: anywhere;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+    color: var(--hot);
+}
+
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@supports (animation-timeline: view()) {
+    .card {
+        animation: rise linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 40%;
+    }
+}
+
+
+.portfolio-photo,
+.project img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-photo:hover,
+.project img:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 8px 8px 0 var(--hot);
+}
+
+
+.contact-list li {
+    transition: transform 0.2s ease;
+}
+
+.contact-list li:hover {
+    transform: translateY(-4px);
+}
+
+
+@media (max-width: 700px) {
+    .topbar {
+        padding: 12px 16px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    header {
+        padding: 32px 16px 8px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .about-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .skills-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        animation: none;
+    }
+
+    .portfolio-photo,
+    .project img,
+    .contact-list li {
+        transition: none;
+    }
+}
